@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "UntrackMe",
+  "short_name": "UntrackMe",
+  "description": "Removes the part of the URLs that is used to track you on the web",
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "version": "1.0.2",
+  "author": "qurb.xyz",
+  "createdby": "Keshav Malani",
+  "homepage_url": "http://qurb.xyz",
+  "browser_action": {
+    "default_icon" : "icon.png",
+    "default_title": "Protecting you from being tracked"
+  },
+  "background": {"scripts":["background.js"]},
+  "permissions": [
+    "webRequest",
+    "*://*/*",
+    "webRequestBlocking"
+  ]
+}
